@@ -1,5 +1,5 @@
 {
-  "contracts": ["contracts/**"],
+  "contracts": ["app/contracts/**"],
   "app": {
     "css/app.css": ["app/css/**"],
     "js/app.js": ["app/js/index.js"],
@@ -14,5 +14,10 @@
     "ipfs-api": "17.2.4",
     "p-iteration": "1.1.7"
   },
-  "plugins": {}
+  "plugins": {
+    "embark-babel": {
+      "minified": true,
+      "presets": ["es2015", "es2016", "es2017", "react"]
+    }
+  }
 }

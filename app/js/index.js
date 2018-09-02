@@ -1,6 +1,11 @@
-import EmbarkJS from 'Embark/EmbarkJS';
+import React from 'react';
+import { render } from 'react-dom';
+import { BrowserRouter } from 'react-router-dom';
+import App from './app.js';
 
-// import your contracts
-// e.g if you have a contract named SimpleStorage:
-//import SimpleStorage from 'Embark/contracts/SimpleStorage';
-
+render(
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>,
+  document.getElementById('root')
+);

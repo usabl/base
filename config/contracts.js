@@ -3,9 +3,9 @@ module.exports = {
   default: {
     // Blockchain node to deploy the contracts
     deployment: {
-      host: "localhost", // Host of the blockchain node
+      host: 'localhost', // Host of the blockchain node
       port: 8545, // Port of the blockchain node
-      type: "rpc" // Type of connection (ws or rpc),
+      type: 'rpc' // Type of connection (ws or rpc),
       // Accounts to use instead of the default account to populate your wallet
       /*,accounts: [
         {
@@ -26,11 +26,11 @@ module.exports = {
     },
     // order of connections the dapp should connect to
     dappConnection: [
-      "$WEB3",  // uses pre existing web3 object if available (e.g in Mist)
-      "ws://localhost:8546",
-      "http://localhost:8545"
+      '$WEB3', // uses pre existing web3 object if available (e.g in Mist)
+      'ws://localhost:8546',
+      'http://localhost:8545'
     ],
-    gas: "auto",
+    gas: 'auto',
     contracts: {
       // example:
       //SimpleStorage: {
